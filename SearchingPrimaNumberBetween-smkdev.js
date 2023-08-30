@@ -3,10 +3,8 @@ function primaNumberBetween(startRange, endRange){
   for(let i = startRange; i <= endRange; i++) {
     let nilaiRangeSekarang = i;
     let array = tampung(nilaiRangeSekarang);
-    if (array.indexOf(0)) {
-      console.log("bilangan prima");  
-    }else{
-      
+    if (array.indexOf(0)=== -1) {
+      console.log(nilaiRangeSekarang);
     }
   }
 }
