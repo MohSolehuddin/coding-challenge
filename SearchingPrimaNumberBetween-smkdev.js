@@ -1,13 +1,13 @@
 // jangan lupa baca README.md ya juri hehe:)
-
-function function_name(argument) {
+primaNumberBetween startRange
   for(let i = startRange; i <= endRange; i++) {
   // perulangan ke 2 untuk menangani nilai di rentang tertentu
   
   }
 }
-// function tamoung yang menampung array hasil modulus
-function tampung (nilaiRangeSekarang, startRange){
+
+// function tampung yang menampung array hasil modulus
+function tampung (nilaiRangeSekarang){
   // membuat wadah untuk menyimpan Array
     let wadah = [];
   for (let i = Math.floor(nilaiRangeSekarang/2); i > startRange; i-- ) {
@@ -17,6 +17,3 @@ function tampung (nilaiRangeSekarang, startRange){
   }
   return wadah;
 }
-// membuat function 
-//perulangan pertama untuk mendapatkan rentang nilai yang ingin di cari nilai primanya
-console.log(tampung(100, 1));
