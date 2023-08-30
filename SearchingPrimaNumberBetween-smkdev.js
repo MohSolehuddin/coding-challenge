@@ -7,7 +7,7 @@ function function_name(argument) {
   }
 }
 // function tamoung yang menampung array hasil modulus
-const tampung (nilaiRangeSekarang, startRange) =>{
+function tampung (nilaiRangeSekarang, startRange){
   for (let i = Math.floor(nilaiRangeSekarang/2); i > startRange; i-- ) {
     // membuat wadah untuk menyimpan Array
     let wadah = [];
