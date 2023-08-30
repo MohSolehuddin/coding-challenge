@@ -12,7 +12,7 @@ function tampung (nilaiRangeSekarang, startRange){
     // membuat wadah untuk menyimpan Array
     let wadah = [];
     // membuah variabel value yang akan menyimpan nilai modulus dari nilai rantang tertentu yang akan kita coba apakah itu bilangan prima atau bukan
-    let value = i%j;
+    let value = nilaiRangeSekarang%i;
     wadah.push(value);
     return wadah
   }
