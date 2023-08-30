@@ -1,8 +1,11 @@
 // jangan lupa baca README.md ya juri hehe:)
-primaNumberBetween startRange
+function primaNumberBetween(startRange, endRange){
   for(let i = startRange; i <= endRange; i++) {
-  // perulangan ke 2 untuk menangani nilai di rentang tertentu
-  
+  let nilaiRangeSekarang = i;
+  let array = tampung(nilaiRangeSekarang);
+  if (true) {
+    
+  }
   }
 }
 
