@@ -1,11 +1,11 @@
 // jangan lupa baca README.md ya juri hehe:)
 function primaNumberBetween(startRange, endRange){
   for(let i = startRange; i <= endRange; i++) {
-  let nilaiRangeSekarang = i;
-  let array = tampung(nilaiRangeSekarang);
-  if (true) {
-    
-  }
+    let nilaiRangeSekarang = i;
+    let array = tampung(nilaiRangeSekarang);
+    if (array.indexOf(0)) {
+      console.log("bilangan prima");  
+    }
   }
 }
 
