@@ -8,13 +8,13 @@ bilangan prima adalah bilangan yang tidak dapat dihasilkan
 dari perkalian bilangan asli lainya
 
 oke mari kita ke pokok penyelesaian
-1. buat variabel startRange dan endRange untuk menampung nilai tentang awal dan akhir
-2. buat looping antara tentang
-3. buat variabel i di perulangan mempunyai nilai = startRange lalu increment kan nilai i
-4. buat perulangan untuk mengetes apakah nilai i jika di modulus dengan angka setengah dari nilai i akan menghasilkan 0 atau lebih, jika lebih maka bilangan prima
-5. simpan hasil dari modulus di sebuah array
-6. jika di array terdapat nilai 0 maka jangan tampilkan angka ini ke dalam konsol karena bukan hilangan prima
-7. dan tampilkan ke konsol jika tidak ada angka 0 didalam nya
+1. disini saya akan membuat sebuah function untuk menangani perulangan bercabang yang lumayan rumit
+2. membuat function primaNumberBetween yang menerima 2 parameter, startRange dan endRange
+3. di dalamnya saya akan memanggil function tampung yang menampung nilai array
+4. membuat function tampung untuk menampung array hasil modulus dari angka yang akan di uji apakah itu bilangan prima/bukan yang menerima 2 parameter yangDiModulus dan peModulus
+5. lalu lakukan pengecekan apakah di dalam array terdapat angka 0
+6. jika iya, jangan tampilkan apa apa
+7. jika tidak, tampilkan angka
+8. 
 
-
-oke mari kita tes logika yang telah saya buat dalam pseudo code
+oke mari kita coba logika baru
