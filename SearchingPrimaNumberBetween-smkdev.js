@@ -8,15 +8,15 @@ function function_name(argument) {
 }
 // function tamoung yang menampung array hasil modulus
 function tampung (nilaiRangeSekarang, startRange){
-  for (let i = Math.floor(nilaiRangeSekarang/2); i > startRange; i-- ) {
-    // membuat wadah untuk menyimpan Array
+  // membuat wadah untuk menyimpan Array
     let wadah = [];
+  for (let i = Math.floor(nilaiRangeSekarang/2); i > startRange; i-- ) {
     // membuah variabel value yang akan menyimpan nilai modulus dari nilai rantang tertentu yang akan kita coba apakah itu bilangan prima atau bukan
     let value = nilaiRangeSekarang%i;
     wadah.push(value);
-    return wadah
   }
+  return wadah;
 }
 // membuat function 
 //perulangan pertama untuk mendapatkan rentang nilai yang ingin di cari nilai primanya
-tampung(100, 1)
+console.log(tampung(100, 1));
