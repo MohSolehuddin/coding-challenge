@@ -5,6 +5,8 @@ function primaNumberBetween(startRange, endRange){
     let array = tampung(nilaiRangeSekarang);
     if (array.indexOf(0)) {
       console.log("bilangan prima");  
+    }else{
+      
     }
   }
 }
