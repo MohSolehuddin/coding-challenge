@@ -24,6 +24,6 @@ function tampung (nilaiRangeSekarang){
 function print() {
   let startRange = document.getElementById("startRange").value;
   let endRange = document.getElementById("endRange").value;
-  let primeNumbersBetween = primeNumbersBetween(startRange,endRange)
-  document.getElementById("output").innerHTML = `${primeNumbersBetween}`;
+  let value = primeNumbersBetween(startRange,endRange)
+  document.getElementById("output").innerHTML = `${value}`;
 }
