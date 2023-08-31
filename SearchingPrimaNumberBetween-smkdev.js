@@ -1,11 +1,13 @@
 // jangan lupa baca README.md ya juri hehe:)
 function primeNumbersBetween(startRange, endRange){
+  let wadah = '';
   for(let nilaiRangeSekarang = startRange; nilaiRangeSekarang <= endRange; nilaiRangeSekarang++) {
     let array = tampung(nilaiRangeSekarang);
     if (array.indexOf(0)=== -1 && nilaiRangeSekarang>1) {
-      return nilaiRangeSekarang;
+      wadah += `${nilaiRangeSekarang} <br/>`;
     }
   }
+  return wadah;
 }
 
 // function tampung yang menampung array hasil modulus
@@ -19,12 +21,13 @@ function tampung (nilaiRangeSekarang){
   }
   return wadah;
 }
+console.log(primeNumbersBetween(1,90));
 
 //membuat fungsi print untuk menampilkan ke html
 async function print() {
   let startRange = document.getElementById("startRange").value;
   let endRange = document.getElementById("endRange").value;
   console.log(startRange, endRange);
-  let value = await primeNumbersBetween(startRange,endRange)
-  await document.getElementById("output").innerHTML = `${value}`;
+  let value = primeNumbersBetween(startRange,endRange)
+  document.getElementById("output").innerHTML = `${value}`;
 }
