@@ -1,7 +1,6 @@
 // jangan lupa baca README.md ya juri hehe:)
-function primaNumberBetween(startRange, endRange){
-  for(let i = startRange; i <= endRange; i++) {
-    let nilaiRangeSekarang = i;
+function primeNumbersBetween(startRange, endRange){
+  for(let nilaiRangeSekarang = startRange; nilaiRangeSekarang <= endRange; nilaiRangeSekarang++) {
     let array = tampung(nilaiRangeSekarang);
     if (array.indexOf(0)=== -1 && nilaiRangeSekarang>1) {
       console.log(nilaiRangeSekarang);
@@ -20,5 +19,3 @@ function tampung (nilaiRangeSekarang){
   }
   return wadah;
 }
-
-primaNumberBetween(1,200)
