@@ -24,7 +24,7 @@ function tampung (nilaiRangeSekarang){
 console.log(primeNumbersBetween(1,90));
 
 //membuat fungsi print untuk menampilkan ke html
-async function print() {
+function print() {
   let startRange = document.getElementById("startRange").value;
   let endRange = document.getElementById("endRange").value;
   console.log(startRange, endRange);
