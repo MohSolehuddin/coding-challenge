@@ -14,7 +14,7 @@
 #output {
   display: flex;
   justify-content: center;
-  direction: column;
+  flex-direction: row;
 }
 h1{
   text-align: center;
