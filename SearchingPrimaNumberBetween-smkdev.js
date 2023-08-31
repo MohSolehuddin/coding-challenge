@@ -3,10 +3,8 @@ function primaNumberBetween(startRange, endRange){
   for(let i = startRange; i <= endRange; i++) {
     let nilaiRangeSekarang = i;
     let array = tampung(nilaiRangeSekarang);
-    if (array.indexOf(0)=== -1) {
-      if (nilaiRangeSekarang>1) {
-        console.log(nilaiRangeSekarang);
-      }
+    if (array.indexOf(0)=== -1 && nilaiRangeSekarang>1) {
+      console.log(nilaiRangeSekarang);
     }
   }
 }
@@ -23,4 +21,4 @@ function tampung (nilaiRangeSekarang){
   return wadah;
 }
 
-primaNumberBetween(100,200)
+primaNumberBetween(1,200)
