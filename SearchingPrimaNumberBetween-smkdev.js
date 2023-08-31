@@ -1,6 +1,6 @@
 // jangan lupa baca README.md ya juri hehe:)
 function primeNumbersBetween(startRange, endRange){
-  let wadah = '';
+  let wadah = '<h3>Bilangan prima antara ${startRange} dan ${endRange} adalah :</h3>';
   for(let nilaiRangeSekarang = startRange; nilaiRangeSekarang <= endRange; nilaiRangeSekarang++) {
     let array = tampung(nilaiRangeSekarang);
     if (array.indexOf(0)=== -1 && nilaiRangeSekarang>1) {
