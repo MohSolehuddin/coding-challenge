@@ -7,6 +7,10 @@
 .container{
   margin: 25px;
 }
+.input-group{
+  display: flex;
+  justify-content: center;
+}
 h1{
   text-align: center;
 }
