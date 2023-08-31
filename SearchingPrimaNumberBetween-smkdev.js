@@ -4,7 +4,9 @@ function primaNumberBetween(startRange, endRange){
     let nilaiRangeSekarang = i;
     let array = tampung(nilaiRangeSekarang);
     if (array.indexOf(0)=== -1) {
-      console.log(nilaiRangeSekarang);
+      if (nilaiRangeSekarang>1) {
+        console.log(nilaiRangeSekarang);
+      }
     }
   }
 }
