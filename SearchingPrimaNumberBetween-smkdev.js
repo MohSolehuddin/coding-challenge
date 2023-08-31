@@ -3,7 +3,7 @@ function primeNumbersBetween(startRange, endRange){
   for(let nilaiRangeSekarang = startRange; nilaiRangeSekarang <= endRange; nilaiRangeSekarang++) {
     let array = tampung(nilaiRangeSekarang);
     if (array.indexOf(0)=== -1 && nilaiRangeSekarang>1) {
-      console.log(nilaiRangeSekarang);
+      return nilaiRangeSekarang;
     }
   }
 }
@@ -18,4 +18,11 @@ function tampung (nilaiRangeSekarang){
     wadah.push(value);
   }
   return wadah;
+}
+
+//membuat fungsi print untuk menampilkan ke html
+function print() {
+  let startRange = document.getElementById("startRange").value;
+  let endRange = document.getElementById("endRange").value;
+  document.getElementById("output").innerHTML = `${primeNumbersBetween(startRange,endRange)}`;
 }
