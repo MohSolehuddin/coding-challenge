@@ -21,10 +21,10 @@ function tampung (nilaiRangeSekarang){
 }
 
 //membuat fungsi print untuk menampilkan ke html
-function print() {
+async function print() {
   let startRange = document.getElementById("startRange").value;
   let endRange = document.getElementById("endRange").value;
   console.log(startRange, endRange);
-  let value = primeNumbersBetween(startRange,endRange)
-  document.getElementById("output").innerHTML = `${value}`;
+  let value = await primeNumbersBetween(startRange,endRange)
+  await document.getElementById("output").innerHTML = `${value}`;
 }
