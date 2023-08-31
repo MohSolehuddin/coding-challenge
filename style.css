@@ -11,6 +11,11 @@
   display: flex;
   justify-content: center;
 }
+#output {
+  display: flex;
+  justify-content: center;
+  direction: column;
+}
 h1{
   text-align: center;
 }
