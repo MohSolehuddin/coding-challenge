@@ -15,6 +15,8 @@ oke mari kita ke pokok penyelesaian
 5. lalu lakukan pengecekan apakah di dalam array terdapat angka 0
 6. jika iya, jangan tampilkan apa apa
 7. jika tidak, tampilkan angka
-8. 
+8. membuat function print untuk menampilkan hasil ke tampilan html
 
 oke mari kita coba logika baru
+
+mohon maaf jika codingan saya bahasanya campur campur dan maaf jika penulisan dalam bahasa inggris ada kesalahan namun saya akan terus belajar
