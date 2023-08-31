@@ -4,7 +4,10 @@ function primeNumbersBetween(startRange, endRange){
   for(let nilaiRangeSekarang = startRange; nilaiRangeSekarang <= endRange; nilaiRangeSekarang++) {
     let array = tampung(nilaiRangeSekarang);
     if (array.indexOf(0)=== -1 && nilaiRangeSekarang>1) {
-      wadah += `${nilaiRangeSekarang} <br/>`;
+      wadah += `
+      <div id="primeNumber">
+        ${nilaiRangeSekarang}
+      </div>`;
     }
   }
   return wadah;
@@ -21,7 +24,6 @@ function tampung (nilaiRangeSekarang){
   }
   return wadah;
 }
-console.log(primeNumbersBetween(1,90));
 
 //membuat fungsi print untuk menampilkan ke html
 function print() {
