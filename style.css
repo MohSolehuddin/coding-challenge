@@ -12,6 +12,10 @@
   justify-content: center;
   margin: 50px 0;
 }
+.input-group input{
+  width: 40%;
+  height: 50px;
+}
 #output {
   display: flex;
   justify-content: center;
