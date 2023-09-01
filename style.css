@@ -6,6 +6,7 @@
   color: rgba(0,0,0,.8);
 }
 body{
+  margin: auto;
   background-color: rgba(0,0,0,.8);
 }
 .background{
@@ -61,4 +62,13 @@ h1{
 }
 p{
   font-size: 15px;
+}
+
+@media (min-width: 700px){
+  .container{
+    max-width: 500px;
+    margin: auto;
+    margin-top: -250px;
+    min-height: 50vh;
+  }
 }
