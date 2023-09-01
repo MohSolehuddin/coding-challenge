@@ -18,6 +18,8 @@
   margin-top: -250px;
   padding: 25px;
   background-color: white;
+  border: .01px solid black;
+  margin-bottom: 50px;
 }
 .input-group{
   display: flex;
@@ -29,7 +31,7 @@
   margin-right: 20px;
   width: 30%;
   height: 40px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px ;
   background-color: rgba(0,0,0, .8);
 }
@@ -49,4 +51,7 @@
 }
 h1{
   text-align: center;
+}
+p{
+  font-size: 15px;
 }
