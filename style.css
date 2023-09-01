@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Sans-Serif;
+  color: rgba(0,0,0,.8);
 }
 body{
   background-color: rgba(0,0,0,.8);
@@ -42,9 +43,10 @@ body{
   color: aqua;
   background-color: rgba(0,0,0, .8);
 }
-button:active{
+button:focus,input:focus{
   background-color: aqua;
   color: rgba(0,0,0,.8);
+  cursor: pointer;
 }
 ::placeholder{
   color: aqua;
@@ -54,11 +56,6 @@ button:active{
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  min-height: 60vh;
-  border: .01px solid rgba(0,0,0,.8);
-  background-color: aqua;
-  padding: 5px;
-  border-radius: 10px;
 }
 h1{
   text-align: center;
