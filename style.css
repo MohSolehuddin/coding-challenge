@@ -4,8 +4,8 @@
   box-sizing: border-box;
   font-family: Sans-Serif;
 }
-.body{
-  text-align: center;
+body{
+  background-color: rgba(0,0,0,.8);
 }
 .background{
   height: 300px;
@@ -13,7 +13,7 @@
 }
 .container{
   border-radius: 25px;
-  min-height: 500px;
+  min-height: 90vh;
   margin: auto 25px;
   margin-top: -250px;
   padding: 20px;
@@ -41,6 +41,10 @@
   border-radius: 10px;
   color: aqua;
   background-color: rgba(0,0,0, .8);
+}
+button:active{
+  background-color: aqua;
+  color: rgba(0,0,0,.8);
 }
 ::placeholder{
   color: aqua;
