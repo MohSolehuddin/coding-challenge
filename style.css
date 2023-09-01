@@ -9,7 +9,7 @@
 }
 .input-group{
   display: flex;
-  justify-content: center;
+  justify-content: sapce-around;
   margin: 50px 0;
 }
 .input-group input{
