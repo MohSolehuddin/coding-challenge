@@ -65,10 +65,13 @@ p{
 }
 
 @media (min-width: 700px){
+  .background{
+    height: 50vh;
+  }
   .container{
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
-    margin-top: -250px;
+    margin-top: -25vh;
     min-height: 50vh;
   }
 }
