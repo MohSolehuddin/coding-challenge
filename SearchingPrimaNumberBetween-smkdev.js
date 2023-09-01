@@ -2,8 +2,7 @@
 function primeNumbersBetween(startRange, endRange){
   let wadah = `<h3>Bilangan prima antara ${startRange} dan ${endRange} adalah :</h3>`;
   for(let nilaiRangeSekarang = startRange; nilaiRangeSekarang <= endRange; nilaiRangeSekarang++) {
-    let array = tampung(nilaiRangeSekarang);
-    if (array.indexOf(0)=== -1 && nilaiRangeSekarang>1) {
+    if (tampung(nilaiRangeSekarang).indexOf(0)=== -1 && nilaiRangeSekarang>1) {
       wadah += `
       <div id="primeNumber">
         ${nilaiRangeSekarang}
@@ -28,7 +27,13 @@ function tampung (nilaiRangeSekarang){
 //membuat fungsi print untuk menampilkan ke html
 function print() {
   let startRange = document.getElementById("startRange").value;
+  if (startRange==="") {
+    startRange = 0;
+  }
   let endRange = document.getElementById("endRange").value;
+  if (endRange==="") {
+    endRange = 0;
+  }
   let value = primeNumbersBetween(startRange,endRange)
   document.getElementById("output").innerHTML = `${value}`;
 }
