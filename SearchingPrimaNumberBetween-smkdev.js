@@ -3,13 +3,13 @@
 
 function primeNumbersBetween(startRange, endRange){
   // membuat variabel wadah untuk menampung nilai yang akan di keluarkan ke html
-  let wadah = `<h3>Bilangan prima antara ${startRange} dan ${endRange} adalah :</h3>`;
+  let wadah = `<h3>Bilangan prima antara ${startRange.toLocaleString()} dan ${endRange.toLocaleString()} adalah :</h3>`;
   //mengecek apakah nilai nilaiRangeSekarang adalah prima atau bukan,jika ya maka tampilkan
   for(let nilaiRangeSekarang = startRange; nilaiRangeSekarang <= endRange; nilaiRangeSekarang++) {
     if (tampung(nilaiRangeSekarang).indexOf(0)=== -1 && nilaiRangeSekarang>1) {
       wadah += `
       <div id="primeNumber">
-        ${nilaiRangeSekarang}
+        ${nilaiRangeSekarang.toLocaleString("in-ID")}
       </div>`;
     }
   }
