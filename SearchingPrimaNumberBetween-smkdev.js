@@ -47,6 +47,6 @@ function print() {
   if (endRange.indexOf(".") !== -1) {
     endRange = endRange.replace(".","")
   }
-  let value = primeNumbersBetween(startRange,endRange)
+  let value = primeNumbersBetween(Number(startRange),Number(endRange))
   document.getElementById("output").innerHTML = `${value}`;
 }
