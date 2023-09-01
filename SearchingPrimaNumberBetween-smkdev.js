@@ -17,7 +17,7 @@ function primeNumbersBetween(startRange, endRange){
 function tampung (nilaiRangeSekarang){
   // membuat wadah untuk menyimpan Array
     let wadah = [];
-  for (let i = Math.floor(nilaiRangeSekarang/2); i > 1; i-- ) {
+  for (let i = Math.floor(Math.sqrt(nilaiRangeSekarang)); i > 1; i-- ) {
     // membuah variabel value yang akan menyimpan nilai modulus dari nilai rantang tertentu yang akan kita coba apakah itu bilangan prima atau bukan
     let value = nilaiRangeSekarang%i;
     wadah.push(value);
