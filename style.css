@@ -54,7 +54,6 @@ button:focus,input:focus{
 #output {
   display: flex;
   justify-content: center;
-  align-items: start;
   flex-direction: column;
 }
 h1{
