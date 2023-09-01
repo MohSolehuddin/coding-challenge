@@ -40,10 +40,13 @@ function print() {
   if (endRange==="") {
     endRange = 0;
   }
+  //jika pengguna memasukan "." maka hapus "." , karena pengguna hanya paham kalau "adalah pembatas angka ribuan atau lebih ,sedangkang javascript mengira itu nilai desimal"
   if (startRange.indexOf(".") !== -1) {
-    startRange.replace(".","")
+    startRange = startRange.replace(".","")
   }
-  console.log(startRange.indexOf("."));
+  if (endRange.indexOf(".") !== -1) {
+    endRange = endRange.replace(".","")
+  }
   let value = primeNumbersBetween(startRange,endRange)
   document.getElementById("output").innerHTML = `${value}`;
 }
