@@ -19,7 +19,7 @@ body{
   margin: auto 25px;
   margin-top: -250px;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(250,250,250);
   border: .01px solid black;
   margin-bottom: 50px;
 }
