@@ -40,9 +40,10 @@ function print() {
   if (endRange==="") {
     endRange = 0;
   }
-  if (startRange.indexOf(".")) {
+  if (startRange.indexOf(".") !== -1) {
     startRange.replace(".","")
   }
+  console.log(startRange.indexOf("."));
   let value = primeNumbersBetween(startRange,endRange)
   document.getElementById("output").innerHTML = `${value}`;
 }
