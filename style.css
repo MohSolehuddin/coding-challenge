@@ -52,7 +52,13 @@ button:active{
 #output {
   display: flex;
   justify-content: center;
+  align-items: start;
   flex-direction: column;
+  min-height: 60vh;
+  border: .01px solid rgba(0,0,0,.8);
+  background-color: aqua;
+  padding: 5px;
+  border-radius: 10px;
 }
 h1{
   text-align: center;
