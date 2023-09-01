@@ -31,14 +31,17 @@ function tampung (nilaiRangeSekarang){
 //membuat fungsi print untuk menampilkan ke html
 function print() {
   // mengambil nilai input rentang awal
-  let startRange = Number(document.getElementById("startRange").value);
-  let endRange = Number(document.getElementById("endRange").value);
+  let startRange = document.getElementById("startRange").value;
+  let endRange = document.getElementById("endRange").value;
   // jika pengguna tidak memberi nilai maka default nya 0
   if (startRange==="") {
     startRange = 0;
   }
   if (endRange==="") {
     endRange = 0;
+  }
+  if (startRange.indexOf(".")) {
+    startRange.replace(".","")
   }
   let value = primeNumbersBetween(startRange,endRange)
   document.getElementById("output").innerHTML = `${value}`;
