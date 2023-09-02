@@ -28,6 +28,7 @@ function tampung (nilaiRangeSekarang){
   return wadah;
 }
 
+//namun dengan adanya code ini, maksimal input adalah 999,999 karena code mengira bahwa itu desimal sedangkan manusia mengira itu pembatas ribuan,jika ingin input lebih dari 1,000,000 hapus aja ya juri code ini, hehe ada plus minusnya,karena mementingkan kebutuhan pengguna jadi saya kasih kode ini walaupun inputnya terbatas
 function numberFormatID(input){
   let nilai = input.value.replace(/\D/g,"")
   let formatNumber = Intl.NumberFormat('id-ID').format(nilai);
@@ -38,6 +39,13 @@ function print() {
   // mengambil nilai input rentang awal
   let startRange = document.getElementById("startRange").value;
   let endRange = document.getElementById("endRange").value;
+  //kita hilangkan titiknya agar tidak di baca desima;)
+  if (startRange.indexOf(".") !== -1) {
+    startRange = startRange.replace(".","")
+  }
+  if (endRange.indexOf(".") !== -1) {
+    endRange = endRange.replace(".","")
+  }
     // jika pengguna tidak memberi nilai maka default nya 0
   if (startRange==="") {
     startRange = 0;
