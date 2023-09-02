@@ -50,11 +50,13 @@ input:focus{
   background-color: aqua;
   color: rgba(0,0,0,.8);
   cursor: pointer;
+  transition: .1s;
 }
 button:focus{
   background-color: rgba(0,0,0,.8);
-  color: aqua;
+  color: rgb(250,250,250);
   cursor: pointer;
+  transition: .1s;
 }
 ::placeholder{
   color: aqua;
