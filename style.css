@@ -78,4 +78,7 @@ p{
     margin-top: -25vh;
     min-height: 50vh;
   }
+  ::placeholder{
+    font-size: 15px;
+  }
 }
