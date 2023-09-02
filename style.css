@@ -54,6 +54,7 @@ button:focus,input:focus{
   color: aqua;
   font-style: italic;
   opacity: .8;
+  font-size: 10px;
 }
 #output {
   display: flex;
