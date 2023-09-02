@@ -13,8 +13,8 @@
     <div class="container">
       <h1>MENCARI BILANGAN PRIMA DI RENTANG TERTENTU</h1>
       <div class="input-group">
-        <input type="number" name="startRange" id="startRange" placeholder="rentang awal"/>
-        <input type="number" name="endRange" id="endRange" placeholder="rentang akhir"/>
+        <input type="number" name="startRange" id="startRange" placeholder="rentang awal" oninput="numberFormatID(this)"/>
+        <input type="number" name="endRange" id="endRange" placeholder="rentang akhir" oninput="numberFormatID(this)"/>
         <button type="submit" onclick="print()">CARI</button>
       </div>
       <div id="output">
