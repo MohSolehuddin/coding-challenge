@@ -42,14 +42,18 @@ body{
 .input-group button{
   width: 70px;
   border-radius: 10px;
-  color: aqua;
-  background-color: rgba(0,0,0, .8);
+  color: rgba(0,0,0, .8);
+  background-color: aqua;
   font-style: bold;
-  font-size: 18px;
 }
-button:focus,input:focus{
+input:focus{
   background-color: aqua;
   color: rgba(0,0,0,.8);
+  cursor: pointer;
+}
+button:focus{
+  background-color: rgba(0,0,0,.8);
+  color: aqua;
   cursor: pointer;
 }
 ::placeholder{
