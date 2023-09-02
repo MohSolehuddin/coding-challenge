@@ -33,19 +33,19 @@ function print() {
   // mengambil nilai input rentang awal
   let startRange = document.getElementById("startRange").value;
   let endRange = document.getElementById("endRange").value;
-  // jika pengguna tidak memberi nilai maka default nya 0
-  if (startRange==="") {
-    startRange = 0;
-  }
-  if (endRange==="") {
-    endRange = 0;
-  }
   //jika pengguna memasukan "." maka hapus "." , karena pengguna hanya paham kalau "adalah pembatas angka ribuan atau lebih ,sedangkang javascript mengira itu nilai desimal"
   if (startRange.indexOf(".") !== -1) {
     startRange = startRange.replace(".","")
   }
   if (endRange.indexOf(".") !== -1) {
     endRange = endRange.replace(".","")
+  }
+    // jika pengguna tidak memberi nilai maka default nya 0
+  if (startRange==="") {
+    startRange = 0;
+  }
+  if (endRange==="") {
+    endRange = 0;
   }
   let value = primeNumbersBetween(Number(startRange),Number(endRange))
   document.getElementById("output").innerHTML = `${value}`;
