@@ -32,7 +32,7 @@ body{
 .input-group input{
   display: flex;
   margin-right: 20px;
-  width: 30%;
+  width: 32%;
   height: 40px;
   padding: 10px;
   border-radius: 10px ;
@@ -62,7 +62,7 @@ button:focus{
   color: aqua;
   font-style: italic;
   opacity: .7;
-  font-size: 14px;
+  font-size: 13px;
 }
 #output {
   display: flex;
