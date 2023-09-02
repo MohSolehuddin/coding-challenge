@@ -44,6 +44,8 @@ body{
   border-radius: 10px;
   color: aqua;
   background-color: rgba(0,0,0, .8);
+  font-style: bold;
+  font-size: 18px;
 }
 button:focus,input:focus{
   background-color: aqua;
