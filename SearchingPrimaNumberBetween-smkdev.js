@@ -28,18 +28,16 @@ function tampung (nilaiRangeSekarang){
   return wadah;
 }
 
+function numberFormatID(input){
+  let nilai = input.value.replace(/\D/g,"")
+  let formatNumber = Intl.NumberFormat('id-ID').format(nilai);
+  input.value = formatNumber;
+}
 //membuat fungsi print untuk menampilkan ke html
 function print() {
   // mengambil nilai input rentang awal
   let startRange = document.getElementById("startRange").value;
   let endRange = document.getElementById("endRange").value;
-  //jika pengguna memasukan "." maka hapus "." , karena pengguna hanya paham kalau "adalah pembatas angka ribuan atau lebih ,sedangkang javascript mengira itu nilai desimal"
-  if (startRange.indexOf(".") !== -1) {
-    startRange = startRange.replace(".","")
-  }
-  if (endRange.indexOf(".") !== -1) {
-    endRange = endRange.replace(".","")
-  }
     // jika pengguna tidak memberi nilai maka default nya 0
   if (startRange==="") {
     startRange = 0;
